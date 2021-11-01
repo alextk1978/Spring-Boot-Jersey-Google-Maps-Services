@@ -8,6 +8,10 @@ import java.io.Serial;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * @author Alexey Tkachenko
+ */
+
 @Data
 @JsonRootName("results")
 public class GeoObject implements Serializable {

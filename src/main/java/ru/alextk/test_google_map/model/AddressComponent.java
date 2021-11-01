@@ -7,6 +7,10 @@ import java.io.Serial;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * @author Alexey Tkachenko
+ */
+
 @Data
 public class AddressComponent implements Serializable {
     @Serial

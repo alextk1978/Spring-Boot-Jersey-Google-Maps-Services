@@ -3,6 +3,10 @@ package ru.alextk.test_google_map;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author Alexey Tkachenko
+ */
+
 @SpringBootApplication
 public class TestGoogleMapApplication {
 

@@ -16,18 +16,15 @@ import javax.ws.rs.core.MediaType;
  * @author Alexey Tkachenko
  */
 
-@Path("/api")
-@Component
 @Slf4j
+@Component
+@Path("/api")
 public class GoogleMapApi {
 
-    private GeoService geoService;
-
-    public GoogleMapApi() {
-    }
+    private final GeoService geoService;
 
     @Autowired
-    public GoogleMapApi(GeoService geoService) {
+    private GoogleMapApi(GeoService geoService) {
         this.geoService = geoService;
     }
 

@@ -6,6 +6,10 @@ import lombok.Data;
 import java.io.Serial;
 import java.io.Serializable;
 
+/**
+ * @author Alexey Tkachenko
+ */
+
 @Data
 public class GeoLocation implements Serializable {
     @Serial

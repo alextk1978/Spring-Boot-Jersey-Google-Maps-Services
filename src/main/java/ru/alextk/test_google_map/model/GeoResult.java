@@ -7,6 +7,10 @@ import java.io.Serial;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * @author Alexey Tkachenko
+ */
+
 @Data
 public class GeoResult implements Serializable {
     @Serial
@@ -18,4 +22,6 @@ public class GeoResult implements Serializable {
     @JsonProperty("status")
     private String status;
 
+    @JsonProperty("plus_code")
+    private GeoPlusCode plusCode;
 }

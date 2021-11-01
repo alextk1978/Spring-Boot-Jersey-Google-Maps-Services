@@ -43,7 +43,7 @@ public class GeoServiceImpl implements GeoService {
         log.debug("Старт метода getResponseFromGoogleMapApi с параметром {}", addressOrCode);
         String encodedAddress = URLEncoder.encode(addressOrCode, StandardCharsets.UTF_8);
         log.debug("Кодируем параметр запроса. Результат кодирования: {}", encodedAddress);
-        String urlResult = url + encodedAddress + "&key=" + apiKey;
+        String urlResult = url + encodedAddress + "&location_type=ROOFTOP&result_type=street_address&key=" + apiKey;
         log.debug("Формируем URL запроса: {}", urlResult);
 
         GeoResult mapEntity = null;
